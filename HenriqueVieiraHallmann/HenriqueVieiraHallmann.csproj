@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ClassDateChange.cs" />
     <Compile Include="ClassMonth.cs" />
+    <Compile Include="IMyDate.cs" />
     <Compile Include="MyDate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

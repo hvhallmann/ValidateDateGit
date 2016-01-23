@@ -14,19 +14,13 @@ namespace HenriqueVieiraHallmann
         public string ChangeDate(string date, char op, long value)
         {
             MyDate oInputDate = new MyDate(date);
-            
-            if(!oInputDate.isValid)          
-                return oInputDate.sReason; 
-                       
-            if (value < 0)
-                value = value * (-1);
 
-            if (op == '+')
-                oInputDate.AddMinutes(value);
-            if (op == '-')
-                oInputDate.decrementMinutes(value);
-            
-            return oInputDate.ToString();
+            if (!oInputDate.isValid)
+                return oInputDate.sReason;
+            else
+            {
+                return oInputDate.ChangeDaysDate(op, value);
+            }            
         }
 
         
